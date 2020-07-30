@@ -23,7 +23,7 @@ namespace task_5
             {
                 message = "Вам нужно набрать вес";
             }
-            else if (IMB > minNormIMB)
+            else if (IMB > maxNormIMB)
             {
                 message = "Вам нужно сбросить вес";
             }
