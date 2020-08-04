@@ -27,31 +27,40 @@ namespace task_3._3
         /// <summary>
         /// Конструктор класса создаёт РЧ m/n равное a/b,
         /// но с взаимно не сократимыми числителем и знаменателем.
-        /// если a = 0 , то создаётся РЧ 0/1
+        /// если b = 0 , то создаётся РЧ 0/1
         /// </summary>
         /// <param name="a">числитель</param>
         /// <param name="b">заменатель</param>
         public Rational(int a, int b)
         {
-            if (a == 0) { m = 0; n = 1; }
-            else
+            try
             {
-                
-                int p = 1, m1 = a, n1 = b;
-                //приведение знака (знак выводится перед числителем)
-                if (b < 0) { b = -b; a = -a; }
-                //приведение к несократимой дроби
-
-                n1 = Math.Abs(n1); m1 = Math.Abs(m1);
-                if (n1 > m1)
-                { p = m1; m1 = n1; n1 = p; }
-                do
+                if (b == 0)
                 {
-                    p = m1 % n1; m1 = n1; n1 = p;
-                } while (n1 != 0);
+                    throw new ArgumentException();
+                }
+                else if (a == 0) { m = 0; n = 1; }
+                else
+                {
+                    int p = 1, m1 = a, n1 = b;
+                    //приведение знака (знак выводится перед числителем)
+                    if (b < 0) { b = -b; a = -a; }
+                    //приведение к несократимой дроби
+                    n1 = Math.Abs(n1); m1 = Math.Abs(m1);
+                    if (n1 > m1)
+                    { p = m1; m1 = n1; n1 = p; }
+                    do
+                    {
+                        p = m1 % n1; m1 = n1; n1 = p;
+                    } while (n1 != 0);
 
-                m = a / m1; n = b / m1;
-                
+                    m = a / m1; n = b / m1;
+                }
+            }
+            catch (ArgumentException)
+            {
+                Console.WriteLine("Знаменатель не может быть равен 0. Дробь будет преобразована к константе zero");
+                m = 0; n = 1;
             }
         }//Rational
 

@@ -12,7 +12,7 @@ namespace task_3._3
         {
             Rational r1 = new Rational(6,10);
             r1.PrintRational("r1");
-            Rational r2 = new Rational(3, 7);
+            Rational r2 = new Rational(3, 0);
             r2.PrintRational("r2");
 
             Rational result = r1 + r2;
