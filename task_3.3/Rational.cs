@@ -57,9 +57,9 @@ namespace task_3._3
                     m = a / m1; n = b / m1;
                 }
             }
-            catch (ArgumentException)
+            catch (ArgumentException ex)
             {
-                Console.WriteLine("Знаменатель не может быть равен 0. Дробь будет преобразована к константе zero");
+                Console.WriteLine($"{ex.GetType()} Знаменатель не может быть равен 0. Дробь будет преобразована к константе zero");
                 m = 0; n = 1;
             }
         }//Rational
