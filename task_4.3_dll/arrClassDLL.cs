@@ -139,6 +139,7 @@ namespace task_4._3_dll
             {
                 Console.Write("{0,4}", s);
             }
+            Console.WriteLine();
         }
 
         /// <summary>
