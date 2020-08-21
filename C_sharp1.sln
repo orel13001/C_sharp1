@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "les 7", "les 7", "{DAB4462B-D9EA-48BA-A7F7-F2E4C4BCE7EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_7.1", "task_7.1\task_7.1.csproj", "{390D4F85-BFFF-493E-8C60-6711EBD57BB0}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{390D4F85-BFFF-493E-8C60-6711EBD57BB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{390D4F85-BFFF-493E-8C60-6711EBD57BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{390D4F85-BFFF-493E-8C60-6711EBD57BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{390D4F85-BFFF-493E-8C60-6711EBD57BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{390D4F85-BFFF-493E-8C60-6711EBD57BB0} = {DAB4462B-D9EA-48BA-A7F7-F2E4C4BCE7EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3139F2A-44DA-461B-B49B-AD4FFAF1B231}
